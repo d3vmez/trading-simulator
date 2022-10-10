@@ -1,0 +1,16 @@
+server:
+  # Puerto para el servidor de configuración
+  port: 8081
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          # Rama donde se encuentra el config-service
+          default-label: config-server
+          # Dirección donde esta ubicado en github
+          uri: https://github.com/mg0mez/trading-simulator
+          # Carpeta donde se almacenan las configuraciones de los servicios
+          search-paths: config-data
+  application:
+    name: config-service

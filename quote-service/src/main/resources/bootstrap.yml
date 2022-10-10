@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: quote-service
+  cloud:
+    config:
+      enabled: true
+      # Dirección de config-server
+      uri: http://localhost:8081
